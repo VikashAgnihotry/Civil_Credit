@@ -1,0 +1,150 @@
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Left Panel (Image & Quote) -->
+        <div class="left-panel">
+            <div class="sliding-background">
+                <div class="tile-column column-1">
+                    <!-- Set 1 (Repeated 3x for height) -->
+
+                    <div class="tile"><img src="assets/5.png" alt=""></div>
+                    <div class="tile"><img src="assets/11.png" alt=""></div>
+                    <div class="tile"><img src="assets/1.png" alt=""></div>
+                    <div class="tile"><img src="assets/4.png" alt=""></div>
+                    <div class="tile"><img src="assets/6.png" alt=""></div>
+                    <div class="tile"><img src="assets/3.png" alt=""></div>
+                    <div class="tile"><img src="assets/9.png" alt=""></div>
+                    <div class="tile"><img src="assets/2.png" alt=""></div>
+                    <div class="tile"><img src="assets/10.png" alt=""></div>
+                    <div class="tile"><img src="assets/8.png" alt=""></div>
+                    <div class="tile"><img src="assets/7.png" alt=""></div>
+                </div>
+                <div class="tile-column column-2">
+                    <!-- Set 1 (Repeated 2x) -->
+                    <div class="tile"><img src="assets/1.png" alt=""></div>
+                    <div class="tile"><img src="assets/2.png" alt=""></div>
+                    <div class="tile"><img src="assets/3.png" alt=""></div>
+                    <div class="tile"><img src="assets/4.png" alt=""></div>
+                    <div class="tile"><img src="assets/5.png" alt=""></div>
+                    <div class="tile"><img src="assets/6.png" alt=""></div>
+                    <div class="tile"><img src="assets/7.png" alt=""></div>
+                    <div class="tile"><img src="assets/8.png" alt=""></div>
+                    <div class="tile"><img src="assets/9.png" alt=""></div>
+                    <div class="tile"><img src="assets/10.png" alt=""></div>
+                    <div class="tile"><img src="assets/11.png" alt=""></div>
+                </div>
+                <div class="tile-column column-3">
+                    <!-- Set 1 (Repeated 2x) -->
+                    <div class="tile"><img src="assets/2.png" alt=""></div>
+                    <div class="tile"><img src="assets/4.png" alt=""></div>
+                    <div class="tile"><img src="assets/6.png" alt=""></div>
+                    <div class="tile"><img src="assets/8.png" alt=""></div>
+                    <div class="tile"><img src="assets/10.png" alt=""></div>
+                    <div class="tile"><img src="assets/1.png" alt=""></div>
+                    <div class="tile"><img src="assets/3.png" alt=""></div>
+                    <div class="tile"><img src="assets/5.png" alt=""></div>
+                    <div class="tile"><img src="assets/7.png" alt=""></div>
+                    <div class="tile"><img src="assets/9.png" alt=""></div>
+                    <div class="tile"><img src="assets/11.png" alt=""></div>
+                </div>
+            </div>
+            <div class="quote-container">
+                <blockquote>
+                    "The power of community is the power of connection. Join us to build a better future together."
+                </blockquote>
+                <cite>- Civic Credit Team</cite>
+            </div>
+        </div>
+
+        <!-- Right Panel (Sign Up Form) -->
+        <div class="right-panel">
+            <div class="login-card">
+                <!-- Header -->
+                <div class="login-header">
+                    <div class="logo-container">
+                        <img src="assets/logo_icon_withthout_bg.png" alt="Civic Credit Logo" class="logo-icon">
+                    </div>
+                    <h2>Create Account</h2>
+                    <p>Join us today! Please enter your details</p>
+                </div>
+
+                <!-- Sign Up Form -->
+                <form id="signupForm" class="login-form">
+                    <!-- Full Name Input -->
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="text" id="fullname" placeholder="Enter your full name" required
+                                class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <input type="email" id="email" placeholder="Enter your email" required class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="password" placeholder="Create a password" required
+                                class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password Input -->
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password" required
+                                class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" style="margin-top: 1rem;">
+                        Create Account
+                    </button>
+                </form>
+
+                <!-- Sign In Link -->
+                <p class="signup-text">
+                    Already have an account?
+                    <button id="signinBtn" class="signup-link">Sign in</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
