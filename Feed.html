@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed - Civic Credit</title>
+    <!-- Fonts: Inter (Body) + Poppins (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="feed-body">
+
+    <!-- 1. Glass Nav Bar -->
+    <nav class="navbar glass-panel">
+        <div class="nav-left">
+            <img src="assets/logo_icon_withthout_bg.png" alt="Civic Credit" class="nav-logo">
+        </div>
+        <div class="nav-center">
+            <!-- Mini Trust Meter -->
+            <div class="mini-trust-meter">
+                <div class="meter-ring p-75"></div> <!-- p-75 means 75% filled -->
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon (Dark - hidden by CSS initially, swapped via JS) -->
+                <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                </button>
+                <button class="icon-btn notification-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <div class="dot"></div>
+                </button>
+                <div class="profile-avatar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
+                </div>
+            </div>
+    </nav>
+
+    <main class="feed-layout">
+
+        <!-- 2. Story Row -->
+        <section class="story-row">
+            <div class="story-item">
+                <div class="story-ring ring-praise">
+                    <img src="https://i.pravatar.cc/150?img=32" alt="User">
+                    <span class="story-badge">Lvl 9</span>
+                </div>
+                <span class="story-name">Local Hero</span>
+            </div>
+            <div class="story-item">
+                <div class="story-ring ring-concern">
+                    <img src="https://i.pravatar.cc/150?img=11" alt="User">
+                    <span class="story-badge">Lvl 7</span>
+                </div>
+                <span class="story-name">Top Helper</span>
+            </div>
+            <div class="story-item">
+                <div class="story-ring ring-primary">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="User">
+                    <span class="story-badge">Lvl 5</span>
+                </div>
+                <span class="story-name">Your Ward</span>
+            </div>
+            <div class="story-item seen">
+                <div class="story-ring">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="User">
+                </div>
+                <span class="story-name">Alex M.</span>
+            </div>
+            <div class="story-item">
+                <div class="story-ring ring-primary">
+                    <img src="https://i.pravatar.cc/150?img=44" alt="User">
+                </div>
+                <span class="story-name">Sarah J.</span>
+            </div>
+        </section>
+
+        <!-- 3. Vertical Feed -->
+        <div class="feed-stream">
+
+            <!-- Card 1: Praise Post (Green Energy) -->
+            <article class="feed-card card-praise">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?img=32" class="avatar-sm" alt="User">
+                        <div class="user-meta">
+                            <h4>Rohan G. <span class="trust-badge badge-green">Lvl 9</span></h4>
+                            <span class="location">Near Indiranagar • 2h ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn">•••</button>
+                </div>
+
+                <div class="card-content">
+                    <div class="content-tag tag-praise">
+                        <span>👏 Civic Praise</span>
+                    </div>
+                    <h3 class="post-title">Organized a weekend cleanup drive at the local park!</h3>
+                    <div class="post-media-placeholder gradient-mint">
+                        <!-- Placeholder for user image -->
+                        <span class="emoji-xl">🌳🧹✨</span>
+                    </div>
+                    <div class="verification-pill">
+                        <span class="avatars-stack">
+                            <img src="https://i.pravatar.cc/150?img=5">
+                            <img src="https://i.pravatar.cc/150?img=11">
+                        </span>
+                        Verified by 12 neighbors
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="action-btn btn-support">
+                        <span class="icon">👍</span>
+                        <span class="count">245</span>
+                    </button>
+                    <button class="action-btn btn-neutral">
+                        <span class="icon">💬</span>
+                        <span class="count">42</span>
+                    </button>
+                    <button class="action-btn btn-neutral share-btn">
+                        <span class="icon">🚀</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Card 2: Concern Post (Amber Energy) -->
+            <article class="feed-card card-concern">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?img=11" class="avatar-sm" alt="User">
+                        <div class="user-meta">
+                            <h4>Anjali P. <span class="trust-badge badge-orange">Lvl 7</span></h4>
+                            <span class="location">MG Road, Ward 14 • 15m ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn">•••</button>
+                </div>
+
+                <div class="card-content">
+                    <div class="content-tag tag-concern">
+                        <span>⚠️ Civic Concern</span>
+                    </div>
+                    <h3 class="post-title">Broken streetlight causing visibility issues at main junction.</h3>
+                    <div class="post-media-placeholder gradient-amber">
+                        <span class="emoji-xl">🚦🔦❓</span>
+                    </div>
+                    <div class="status-pill pill-review">
+                        <span>Under Review</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="action-btn btn-support">
+                        <span class="icon">✊</span>
+                        <span class="count">89</span>
+                    </button>
+                    <button class="action-btn btn-neutral">
+                        <span class="icon">💬</span>
+                        <span class="count">15</span>
+                    </button>
+                    <button class="action-btn btn-neutral share-btn">
+                        <span class="icon">🚀</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Gamification Insert -->
+            <div class="gamification-insert">
+                <div class="quest-content">
+                    <span class="quest-icon">🎮</span>
+                    <div>
+                        <h4>Daily Quest</h4>
+                        <p>Verify 3 more reports to verify your streak!</p>
+                    </div>
+                </div>
+                <button class="quest-btn">Go</button>
+            </div>
+
+            <!-- Card 3: Generic -->
+            <article class="feed-card">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?img=60" class="avatar-sm" alt="User">
+                        <div class="user-meta">
+                            <h4>Vikram S. <span class="trust-badge badge-blue">Lvl 4</span></h4>
+                            <span class="location">Koramangala • 4h ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="text-content">Just verified my phone number and joined the community! Excited to help out.
+                    </p>
+                </div>
+                <div class="card-actions">
+                    <button class="action-btn btn-support">
+                        <span class="icon">👋</span>
+                        <span class="count">12</span>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- 4. Floating Action Button -->
+    <button class="fab" id="createPostBtn">
+        <span class="fab-icon">✍️</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

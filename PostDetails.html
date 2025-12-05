@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details - Civic Credit</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="feed-body">
+
+    <!-- 1. Glass Nav Bar (Consistent with Feed) -->
+    <nav class="navbar glass-panel">
+        <div class="nav-left">
+            <a href="Feed.html" class="icon-btn" aria-label="Back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </a>
+        </div>
+        <div class="nav-center">
+            <span class="nav-title" style="font-weight: 700; font-family: 'Poppins';">Post Details</span>
+        </div>
+        <div class="nav-right" style="width: 40px;"> <!-- Balance spacier --> </div>
+    </nav>
+
+    <main class="feed-layout">
+        <div class="feed-stream">
+
+            <!-- MAIN POST CARD -->
+            <article class="feed-card card-praise" id="mainPostCard">
+                <div class="card-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?u=detail" class="avatar-sm" alt="User">
+                        <div class="user-meta">
+                            <h4>Rahul D. <span class="trust-badge badge-green">Lvl 7</span></h4>
+                            <span class="location">MG Road • 15m ago</span>
+                        </div>
+                    </div>
+                    <button class="more-btn">•••</button>
+                </div>
+
+                <div class="card-content">
+                    <div class="content-tag tag-praise" id="postTag">
+                        <span>👏 Civic Praise</span>
+                    </div>
+
+                    <h3 class="post-title" id="postTitle">Helped an elderly man cross the busy MG Road intersection
+                        during rush hour.</h3>
+
+                    <p class="post-text" style="margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.5;">
+                        Saw an elderly gentleman struggling with the heavy traffic near the signal. Stopped my bike and
+                        helped him navigate across safely. Drivers were very cooperative once I signaled. Small acts
+                        matter!
+                    </p>
+
+                    <!-- Large Image -->
+                    <div class="post-media-large"
+                        style="width: 100%; border-radius: 1rem; overflow: hidden; margin-bottom: 1rem;">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=1000"
+                            alt="Post Image" style="width: 100%; height: auto; display: block;">
+                    </div>
+
+                    <div class="verification-pill">
+                        <span class="avatars-stack">
+                            <img src="https://i.pravatar.cc/150?u=1">
+                            <img src="https://i.pravatar.cc/150?u=2">
+                            <img src="https://i.pravatar.cc/150?u=3">
+                        </span>
+                        Verified by 12 community members
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="action-btn btn-support active">
+                        <span class="icon">👍</span>
+                        <span class="count">142</span>
+                    </button>
+                    <button class="action-btn btn-neutral">
+                        <span class="icon">👎</span>
+                        <span class="count">2</span>
+                    </button>
+                    <button class="action-btn btn-neutral share-btn">
+                        <span class="icon">🚀</span>
+                    </button>
+                </div>
+            </article>
+
+            <!-- GAMIFICATION INSERT (Reused) -->
+            <div class="gamification-insert">
+                <div class="quest-content">
+                    <span class="quest-icon">⭐</span>
+                    <div>
+                        <h4>Trust Impact</h4>
+                        <p>This action contributed <strong>+15 Trust Points</strong> to the neighborhood score!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMENTS SECTION -->
+            <div class="feed-card" style="padding: 0;">
+                <div style="padding: 1rem; border-bottom: 1px solid #f1f5f9;">
+                    <h4 style="font-family: 'Poppins'; font-weight: 700;">Comments (24)</h4>
+                </div>
+
+                <div class="comment-list" style="padding: 1rem;">
+                    <!-- Comment 1 -->
+                    <div class="comment-item" style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+                        <img src="https://i.pravatar.cc/150?u=5" style="width: 2rem; height: 2rem; border-radius: 50%;"
+                            alt="User">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                                <span style="font-weight: 600; font-size: 0.9rem;">Priya S.</span>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">2m</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4;">This is
+                                exactly what we need more of! Great job Rahul.</p>
+                        </div>
+                    </div>
+
+                    <!-- Comment 2 -->
+                    <div class="comment-item" style="display: flex; gap: 0.75rem;">
+                        <img src="https://i.pravatar.cc/150?u=8" style="width: 2rem; height: 2rem; border-radius: 50%;"
+                            alt="User">
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                                <span style="font-weight: 600; font-size: 0.9rem;">Amit K.</span>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">10m</span>
+                            </div>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4;">I pass by that
+                                spot every day, it's really dangerous. Good initiative.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 1rem; border-top: 1px solid #f1f5f9; text-align: center;">
+                    <button
+                        style="color: var(--primary-color); font-weight: 600; background: none; border: none; cursor: pointer;">View
+                        all comments</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Demo Toggle FAB -->
+    <button class="fab" id="viewToggle" style="background: #1e293b;">
+        <span class="fab-icon">👁️</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

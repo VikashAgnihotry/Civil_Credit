@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Trust Dashboard - Civic Credit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="trust-body">
+
+    <!-- 1. Header Bar -->
+    <nav class="trust-nav">
+        <div class="nav-left">
+            <a href="Feed.html" class="nav-back-btn" aria-label="Back">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5" />
+                    <path d="M12 19l-7-7 7-7" />
+                </svg>
+            </a>
+        </div>
+        <div class="nav-title">Trust Dashboard</div>
+        <div class="nav-right">
+            <button class="nav-info-btn" aria-label="Info">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="16" x2="12" y2="12" />
+                    <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="trust-content">
+
+        <!-- 1. Professional Profile Header -->
+        <header class="profile-header-pro">
+            <div class="pro-avatar-container">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Vikash" alt="Profile" class="pro-avatar">
+                <div class="pro-badge-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                </div>
+            </div>
+            <div class="pro-identity">
+                <h1 class="pro-name">Vikash Agnihotry</h1>
+                <p class="pro-handle">@vikash_civil</p>
+                <p class="pro-bio">Civic enthusiast & community guardian. <br>Building trust one action at a time.</p>
+            </div>
+            <button class="btn-edit-pro">Edit Profile</button>
+        </header>
+
+        <!-- 2. Trust Summary Card (Hero) -->
+        <section class="trust-summary-card">
+            <div class="ts-header">
+                <div class="ts-icon">
+                    <img src="assets/logo_icon_without_bg.png" alt="Trust Icon" class="ts-logo-img">
+                </div>
+                <div class="ts-score">
+                    <span class="ts-level">Level 4</span>
+                    <span class="ts-percent">40%</span>
+                </div>
+            </div>
+
+            <p class="ts-desc">Your civic trust reflects your verified identity and contribution to the community.</p>
+
+            <div class="trust-bar-track">
+                <div class="trust-bar-fill" style="width: 40%"></div>
+            </div>
+        </section>
+
+        <!-- 3. Requirements Breakdown -->
+        <section class="req-section">
+            <div class="req-list">
+                <div class="card-header">
+                    <h3 class="section-label-inner">Verification Steps</h3>
+                </div>
+                <!-- Phone -->
+                <div class="req-row">
+                    <div class="req-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div class="req-info">
+                        <div class="req-title">Phone Verification</div>
+                        <div class="req-sub">Verified • +10% trust</div>
+                    </div>
+                    <div class="req-status status-verified">Verified</div>
+                </div>
+
+                <!-- Email -->
+                <div class="req-row">
+                    <div class="req-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div class="req-info">
+                        <div class="req-title">Email Verified</div>
+                        <div class="req-sub">Verified</div>
+                    </div>
+                    <div class="req-status status-verified">Verified</div>
+                </div>
+
+                <!-- Identity (Pending) -->
+                <div class="req-row">
+                    <div class="req-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <div class="req-info">
+                        <div class="req-title">Identity Confirmation</div>
+                        <div class="req-sub text-blue">Action Required</div>
+                    </div>
+                    <div class="req-status status-pending">Pending</div>
+                    <div class="req-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Recent Activity Log (New) -->
+        <section class="activity-section-pro">
+            <div class="activity-log-pro">
+                <div class="card-header">
+                    <h3 class="section-label-inner">Recent Activity</h3>
+                </div>
+                <div class="log-item">
+                    <div class="log-date">Today</div>
+                    <div class="log-content">
+                        <div class="log-title">Verified Email Address</div>
+                        <div class="log-meta">System • +5 Trust Score</div>
+                    </div>
+                </div>
+                <div class="log-item">
+                    <div class="log-date">Yesterday</div>
+                    <div class="log-content">
+                        <div class="log-title">Community Praise Received</div>
+                        <div class="log-meta">@anisha_k • "Helpful neighbor"</div>
+                    </div>
+                </div>
+                <div class="log-item">
+                    <div class="log-date">2 Dec</div>
+                    <div class="log-content">
+                        <div class="log-title">Joined Civic Credit</div>
+                        <div class="log-meta">Account Created</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA -->
+        <div class="cta-container">
+            <button class="btn-primary-trust">Improve Trust Level</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
